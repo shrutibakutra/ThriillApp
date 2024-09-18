@@ -1,0 +1,37 @@
+@import "./../../styles/colors.scss";
+@import "./../../styles/styles.scss";
+
+.card-thriill {
+    // width: 44 * $gridSize !important;
+    border: 1px solid #fff !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2 * $gridSize;
+    
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &--border {
+        border: 1px solid green !important;
+    }
+
+    &__icon {
+        color: green;
+        font-size: 5 * $gridSize;
+    }
+
+    // @media (max-width: $largeScreen) {
+    //     width: 34 * $gridSize !important;
+    // }
+
+    // @media (max-width: $mediumScreen) {
+    //     width: 29 * $gridSize !important;
+    // }
+
+    @media (max-width: $xsmallcreen) {
+        margin-bottom: $gridSize * 2;
+    }
+}

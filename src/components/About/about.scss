@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+@import "../../styles/styles.scss";
+
+.about {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10 * $gridSize 0;
+
+    @media (max-width: $smallScreen) {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3 * $gridSize;
+    }
+
+    @media (max-width: $xsmallcreen) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 3 * $gridSize;
+    }
+}

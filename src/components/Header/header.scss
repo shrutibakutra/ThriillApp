@@ -1,0 +1,16 @@
+@import "../../styles/colors.scss";
+@import "../../styles/styles.scss";
+
+.navbar {
+    background-color: #ffff;
+
+    .navbar-header {
+        margin-left: $gridSize * 4;
+        justify-content: end;
+    
+        .nav-link {
+            color: $color--gray800;
+        }
+    }
+
+}

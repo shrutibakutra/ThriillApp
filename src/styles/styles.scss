@@ -1,0 +1,39 @@
+
+//screen size
+$xxsmallScreen: 567px;
+$xsmallcreen: 780px;
+$smallScreen: 1000px;
+$mediumScreen: 1220px;
+$largeScreen: 1300px;
+$xlargeScreen: 1440px;
+
+$gridSize: 8px;
+
+.cta-button {
+    background-color: $color--blue;
+    border: 1px solid $color--blue;
+
+    border-radius: 4px !important;
+    height: $gridSize * 7;
+    width: $gridSize * 22;
+    color: $color--gray50;
+
+    &:hover {
+        background-color: $color--blue;
+        color: $color--white;
+    }
+
+    @media (max-width: $smallScreen) {
+        width: $gridSize * 21;
+        font-size: 2 * $gridSize;
+    }
+
+    @media (max-width: $xxsmallScreen) {
+            width: $gridSize * 21;
+            font-size: 16px;
+        }
+}
+
+html {
+    scroll-behavior: smooth;
+}

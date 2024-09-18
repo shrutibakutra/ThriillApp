@@ -1,0 +1,22 @@
+.c-img {
+    margin-right: 16px;
+}
+.screenshot {
+    h1 {
+        text-align: left;
+        font-weight: 700;
+    }
+
+    &__scroll {
+        display: flex;
+        color: royalblue;
+        height: 40px;
+        margin-top: 259px;
+        background-color: rosybrown
+    }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: rosybrown;
+    color: royalblue;
+}
