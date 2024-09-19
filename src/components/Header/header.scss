@@ -1,16 +1,32 @@
 @import "../../styles/colors.scss";
 @import "../../styles/styles.scss";
 
-.navbar {
-    background-color: #ffff;
+.navbar-custom {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  // background-color: $color--white; 
+  background: linear-gradient(to right, #FFC000 0%, #fff 100%);
+  padding: 2 * $gridSize 7 * $gridSize !important;
 
-    .navbar-header {
-        margin-left: $gridSize * 4;
-        justify-content: end;
-    
-        .nav-link {
-            color: $color--gray800;
-        }
+
+  .navbar-header {
+    margin-left: $gridSize * 4;
+    justify-content: end;
+  
+    .nav-link {
+      color: $color--gray800;
+      transition: color 0.3s ease-in-out;
     }
+  }
+}
 
+.navbar-custom.scrolled {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+//   .nav-link {
+//     color: white;
+//   }
 }

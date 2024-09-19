@@ -6,7 +6,7 @@
     justify-content: space-between;
     height: 90 * $gridSize;
     align-items: center;
-    background: linear-gradient(to right, #FFC000 0%, #f8f9fc 100%);
+    background: linear-gradient(to right, #FFC000 0%, #fff 100%);
     margin: 0 -80px;
     padding: 18 * $gridSize;
 
@@ -79,7 +79,7 @@
 
     @media (max-width: $xsmallcreen) {
             padding: 5 * $gridSize;
-            height: 50 * $gridSize;
+            height: 70 * $gridSize;
             margin: 0;
 
             &__left-end {

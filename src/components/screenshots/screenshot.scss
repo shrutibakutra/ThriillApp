@@ -1,36 +1,115 @@
+@import "../../styles/colors.scss";
+@import "../../styles/styles.scss";
+
 .screenshot__scroll {
-    z-index: 1000;
-    opacity: 1;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #816f5d;
-    border-radius: 50%;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: $gridSize;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  
-  .c-img {
-    // position: relative;
-    margin-right: 16px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1 !important;
+
+}
+
+.carousel-control-next-icon {
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 7 * $gridSize !important;
+  width: 7 * $gridSize !important;
+  background-image: url("./../../assets/ArrowNext.png") !important;
+  opacity: 1 !important;
+}
+
+
+.carousel-control-prev-icon{
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 7 * $gridSize !important;
+  width: 7 * $gridSize !important;
+  background-image: url("./../../assets/ArrowBack.png") !important;
+  opacity: 1 !important;
+  width: 33%;
+
+}
+
+.c-img {
+  margin-right: 16px;
+}
+
+.c-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #958b81;
+  pointer-events: none;
+}
+
+.carousel-indicators li {
+  background-color: #958b81;
+}
+
+.carousel-indicators .active {
+  background-color: red;
+}
+
+/* Style for the mobile frame */
+.mobile-frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 40px;
+  border: 12px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 16px;
+
+  &--mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 300px;
+    background-color: #000;
+    border-radius: 40px;
+    border: 12px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
   }
-  
-  .c-img::after {
-    content: '';
+
+  /* Screen notch at the top */
+  &::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #958b81;
-    pointer-events: none;
+    top: 10px;
+    height: 30px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 10px;
+    z-index: 1;
   }
-  
-  .carousel-indicators li {
-    background-color: #958b81;
-  }
-  
-  .carousel-indicators .active {
-    background-color: red;
-  }
-  
+}
+
+.mobile-view {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}

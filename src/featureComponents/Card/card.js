@@ -12,7 +12,7 @@ const CardThrill = ({ title, cardText, classname, border, src }) => {
         >
             <FontAwesomeIcon icon={src} className="card-thriill__icon"/>
             <CardBody>
-                <CardTitle tag="h5">
+                <CardTitle tag="h5" className="card-thriill__title">
                     {title}
                 </CardTitle>
 

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import "./main.scss";
 import hero from "../../assets/mockup1.png";
 
-
 const Main = () => {
 
     const adjustScroll = () => {
@@ -21,6 +20,7 @@ const Main = () => {
     }, []);
 
     return (
+        <div className="main-container">
         <div className='main'>
             <div className='main__left-end'>
                 <div className='main__left-end__title'>🎶 Welcome to ThriillApp! 🎶</div>
@@ -37,6 +37,7 @@ const Main = () => {
             <div className='main__right-end' >
                 <img src={hero} height={"600px"} />
             </div>
+        </div>
         </div>
     );
 };

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Navbar,
   NavbarBrand,
@@ -10,33 +9,52 @@ import {
   Collapse,
 } from 'reactstrap';
 import "./header.scss";
+import logo from "../../assets/logo1.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
 
   const toggle = () => setIsOpen(!isOpen);
+
   const adjustScroll = () => {
     const sections = ['features', 'screenshots', 'download', 'contact'];
   
     sections.forEach(id => {
       const element = document.getElementById(id);
       if (element) {
-        element.style.scrollMarginTop = '80px';
+        element.style.scrollMarginTop = '80px'; // Adjust scroll margin for sections
       }
     });
   };
-  
+
+  // Detect scroll position
   useEffect(() => {
     adjustScroll();
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);  // Add background color when scrolled down
+      } else {
+        setIsScrolled(false); // Reset background color when at the top
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <Navbar light expand="md">
-      <NavbarBrand href="/">Thriill</NavbarBrand>
+    <Navbar className={`navbar-custom ${isScrolled ? 'scrolled' : ''}`} light expand="md">
+      <NavbarBrand href="/">
+        <img src={logo} height={"50px"} alt="Logo" />
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar className='navbar-header'>
         <Nav className="ml-auto" navbar>
-        <NavItem>
+          <NavItem>
             <NavLink href="#features">Features</NavLink>
           </NavItem>
           <NavItem>
@@ -46,7 +64,7 @@ const Header = () => {
             <NavLink href="#download">Download</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#download">Contact</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
           </NavItem>
         </Nav>
       </Collapse>

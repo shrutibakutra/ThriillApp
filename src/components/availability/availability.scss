@@ -2,12 +2,12 @@
 @import "../../styles/styles.scss";
 
 .availability-container {
-    // text-align: center;
     color: black;
-    background: linear-gradient(to right, #edf0f4 0%, #f5d5b8 100%);
+    background-color: #f8f8f8;
+    // background: linear-gradient(to right, #edf0f4 0%, #f5d5b8 100%);
     margin-top: 5 * $gridSize;
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: -60px;
+    margin-right: -60px;
     padding: 8 * $gridSize;
 
     display: grid;
@@ -32,8 +32,8 @@
     }
 
     @media (max-width: $xsmallcreen) {
-        margin-left: -10px;
-        margin-right: -10px;
+        // margin-left: -10px;
+        // margin-right: -10px;
         grid-template-columns: repeat(1, 1fr);
     }
     

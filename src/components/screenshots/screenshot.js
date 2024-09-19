@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import "./screenshot.scss";
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
+import './screenshot.scss';
+
 import thriill1 from "../../assets/thriill1.png";
 import thriill2 from "../../assets/thriill2.png";
 import thriill3 from "../../assets/thriill3.png";
 import thriill4 from "../../assets/thriill4.png";
 import thriill5 from "../../assets/thriill5.png";
-import thriill6 from "../../assets/thriill6.png";
-import thriill7 from "../../assets/thriill5\7.png";
-
 
 const items = [
     { src: thriill1, key: 1 },
@@ -15,28 +14,28 @@ const items = [
     { src: thriill3, key: 3 },
     { src: thriill4, key: 4 },
     { src: thriill5, key: 5 },
-    { src: thriill6, key: 6 },
-    { src: thriill7, key: 7 },
 ];
+const mobilescreen = window.screen.availWidth < 700;
 
-function Screenshots() {
+const Screenshot = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
     const next = () => {
         if (animating) return;
-        setAnimating(true);
-        setTimeout(() => setAnimating(false), 500); // animation duration of 0.5s
         const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     };
 
     const previous = () => {
         if (animating) return;
-        setAnimating(true);
-        setTimeout(() => setAnimating(false), 500);
         const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
+    };
+
+    const goToIndex = (newIndex) => {
+        if (animating) return;
+        setActiveIndex(newIndex);
     };
 
     const getPreviousIndex = () => {
@@ -47,36 +46,62 @@ function Screenshots() {
         return activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     };
 
+    const slides = items.map((item, index) => {
+        return (
+            <CarouselItem
+                onExiting={() => setAnimating(true)}
+                onExited={() => setAnimating(false)}
+                key={item.src}
+            >
+                {mobilescreen ? (
+                    // <img src={items[activeIndex].src} height={'600px'} className='c-img' />
+                    <div className="mobile-frame--mobile">
+                            <img src={items[activeIndex].src} className='mobile-view' />
+                    </div>
+                ) : (
+                    <div className='carousel-images'>
+                        <img src={items[getPreviousIndex()].src} height={'400px'} className='c-img' />
+                        <div className="mobile-frame">
+                            <img src={items[activeIndex].src} className='mobile-view' />
+                        </div>
+                        <img src={items[getNextIndex()].src} height={'400px'} className='c-img' />
+                    </div>
+                )}
+            </CarouselItem>
+        );
+    });
+
     return (
-        <div className='screenshot' id='screenshots'>
+        <div id='screenshots' className='screenshot'>
             <div><h1>Screenshots</h1></div>
-            <div className='carousel-container'>
-                <div className={`carousel-image previous ${animating ? 'animating' : ''}`}>
-                    <img src={items[getPreviousIndex()].src} alt="Previous" height={'400px'} />
-                </div>
-                <div className={`carousel-image active ${animating ? 'animating' : ''}`}>
-                    <img src={items[activeIndex].src} alt="Active" height={'600px'} />
-                </div>
-                <div className={`carousel-image next ${animating ? 'animating' : ''}`}>
-                    <img src={items[getNextIndex()].src} alt="Next" height={'400px'} />
-                </div>
-            </div>
-            <div>
-            <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-            />
-            </div>
-            <div>
-            <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-            />
-            </div>
+            <Carousel
+                activeIndex={activeIndex}
+                next={next}
+                previous={previous}
+                fade
+                slide
+                controls
+            >
+                <CarouselIndicators
+                    items={items}
+                    activeIndex={activeIndex}
+                    onClickHandler={goToIndex}
+                />
+                {slides}
+                <CarouselControl
+                    direction="prev"
+                    directionText="Previous"
+                    onClickHandler={previous}
+                    className='screenshot__scroll'
+                />
+                <CarouselControl
+                    direction="next"
+                    directionText="Next"
+                    onClickHandler={next}
+                />
+            </Carousel>
         </div>
     );
-}
+};
 
-export default Screenshots;
+export default Screenshot;
