@@ -58,7 +58,7 @@ const ParticlesThrill = () => {
           },
           links: {
             color: "trasparent",
-            distance: 150,
+            distance: 180,
             enable: true,
             opacity: 1,
             width: 1,
@@ -70,7 +70,7 @@ const ParticlesThrill = () => {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 0.5,
             straight: false,
           },
           number: {
@@ -78,10 +78,10 @@ const ParticlesThrill = () => {
               enable: true,
               area: 500,
             },
-            value: 40,
+            value: 20,
           },
           opacity: {
-            value: 1,
+            value: 0.6,
           },
           shape: {
             type: "char", // changing shape to 'char' for custom characters
@@ -94,7 +94,7 @@ const ParticlesThrill = () => {
             },
           },
           size: {
-            value: { min: 5, max: 10 },
+            value: { min: 20, max: 25 },
           },
         },
         detectRetina: true,
