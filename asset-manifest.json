@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThriillApp/static/css/main.6a92089c.css",
-    "main.js": "/ThriillApp/static/js/main.94e91b0f.js",
+    "main.css": "/ThriillApp/static/css/main.65a56e22.css",
+    "main.js": "/ThriillApp/static/js/main.28685aa3.js",
     "static/js/453.1b461d40.chunk.js": "/ThriillApp/static/js/453.1b461d40.chunk.js",
     "static/media/mockup1.png": "/ThriillApp/static/media/mockup1.7f2954c37ca6792ed22f.png",
     "static/media/thriill3.png": "/ThriillApp/static/media/thriill3.f7aee7f08ecc15b87a08.png",
@@ -10,12 +10,12 @@
     "static/media/thriill2.png": "/ThriillApp/static/media/thriill2.94ec5f843b6f01b5f6b5.png",
     "static/media/thriill1.png": "/ThriillApp/static/media/thriill1.baa40164b99368ace2b0.png",
     "index.html": "/ThriillApp/index.html",
-    "main.6a92089c.css.map": "/ThriillApp/static/css/main.6a92089c.css.map",
-    "main.94e91b0f.js.map": "/ThriillApp/static/js/main.94e91b0f.js.map",
+    "main.65a56e22.css.map": "/ThriillApp/static/css/main.65a56e22.css.map",
+    "main.28685aa3.js.map": "/ThriillApp/static/js/main.28685aa3.js.map",
     "453.1b461d40.chunk.js.map": "/ThriillApp/static/js/453.1b461d40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a92089c.css",
-    "static/js/main.94e91b0f.js"
+    "static/css/main.65a56e22.css",
+    "static/js/main.28685aa3.js"
   ]
 }
