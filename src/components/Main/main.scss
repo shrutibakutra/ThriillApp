@@ -12,7 +12,8 @@
 
 
     &__left-end {
-    z-index: 2 !important;
+        z-index: 2 !important;
+        max-width: 100 * $gridSize ;
 
         &__title {
             font-size: 5 * $gridSize;
@@ -21,7 +22,7 @@
 
         &__buttons {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: 5 * $gridSize;
 
             button {
@@ -36,6 +37,7 @@
             }
 
                 a {
+                    margin-right: 2 * $gridSize;
                     img {
                        height: 7 * $gridSize;
                         width: 100%;

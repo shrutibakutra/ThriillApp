@@ -76,6 +76,17 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   margin-right: 16px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    height: 4px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 2px;
+    z-index: 1;
+  }
+
   &--small {
     position: relative;
     display: flex;
@@ -88,7 +99,17 @@
     border: 12px solid #333;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin-right: 16px;
-    opacity: 0.8;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      height: 4px;
+      width: 60px;
+      background-color: rgba(0, 0, 0, 0.603);
+      border-radius: 2px;
+      z-index: 1;
+    }
   }
 
   &--mobile {
@@ -104,32 +125,24 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
   }
-
-  /* Screen notch at the top */
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    height: 30px;
-    width: 60px;
-    background-color: #000;
-    border-radius: 10px;
-    z-index: 1;
-  }
 }
 
 .mobile-view {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+  height: 99%;
+  width: 98%;
+  border-radius: 20px;
 }
 
+.carousel-item {
+  .active {
+    opacity: 1;
+  }
+}
 
 
 .carousel-item {
-  transition: transform 0.5s ease, opacity 0.5s ease !important;  // Smooth slide animation for each item
+  transition: none !important;
 }
-
 .mobile-frame, .mobile-frame--mobile {
-  transition: transform 0.5s ease, opacity 0.5s ease;  // Smoother transition for mobile view
+  transition: none;
 }

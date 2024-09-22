@@ -4,11 +4,10 @@
 .availability-container {
     color: black;
     background-color: #f8f8f8;
-    // background: linear-gradient(to right, #edf0f4 0%, #f5d5b8 100%);
     margin-top: 5 * $gridSize;
     margin-left: -60px;
     margin-right: -60px;
-    padding: 8 * $gridSize;
+    padding: 8 * $gridSize 20 * $gridSize;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
