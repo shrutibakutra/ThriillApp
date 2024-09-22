@@ -17,8 +17,9 @@ function App() {
           content="Learn music with personalized lessons and expert guidance. Start your musical journey today with our interactive learning platform- Thrill!"
         />
       </Helmet>
-      <Header />
       <ParticlesThrill/>
+
+      <Header />
       <Main />
       <About />
       <Screenshots />
