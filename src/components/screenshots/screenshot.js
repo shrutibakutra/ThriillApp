@@ -54,17 +54,20 @@ const Screenshot = () => {
                 key={item.src}
             >
                 {mobilescreen ? (
-                    // <img src={items[activeIndex].src} height={'600px'} className='c-img' />
                     <div className="mobile-frame--mobile">
-                            <img src={items[activeIndex].src} className='mobile-view' />
+                        <img src={items[activeIndex].src} className='mobile-view' />
                     </div>
                 ) : (
                     <div className='carousel-images'>
-                        <img src={items[getPreviousIndex()].src} height={'400px'} className='c-img' />
-                        <div className="mobile-frame">
-                            <img src={items[activeIndex].src} className='mobile-view' />
+                         <div className="mobile-frame--small">
+                            <img src={items[getPreviousIndex()].src} className='carousel-images__side' />
                         </div>
-                        <img src={items[getNextIndex()].src} height={'400px'} className='c-img' />
+                        <div className="mobile-frame">
+                            <img src={items[activeIndex].src} className='mobile-view carousel-images__center' />
+                        </div>
+                        <div className="mobile-frame--small">
+                        <img src={items[getNextIndex()].src} height={'400px'} className='carousel-images__side' />
+                        </div>
                     </div>
                 )}
             </CarouselItem>

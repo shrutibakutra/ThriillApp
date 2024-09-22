@@ -1,8 +1,15 @@
 import './availability.scss';
+import { useState } from 'react';
 
 const Availability = () => {
+    const [showEmail, setShowEmail] = useState(false);
+
+    const handleShowEmail = () => {
+        setShowEmail(true);
+    };
+
     return (
-        <div className="availability-container" id='download'>
+        <div className="availability-container" id='contact'>
             <div className="availability-container__left">
                 <h1>Available for free!</h1>
                 <p>Download free app from Google Play Store or App Store now and become a better musician!</p>
@@ -16,11 +23,19 @@ const Availability = () => {
                 </div>
             </div>
             <div className="availability-container__right">  
-                <h3>Write to us!</h3>
                 <div>
-                <div>Email</div>
-                    <a href="mailto:feedback@thriill.com">feedback@thriill.com</a>
+                    <h3>Write to us!</h3>
+                    {!showEmail ? (
+                        <button onClick={handleShowEmail} className="cta-button">
+                           Email
+                        </button>
+                    ) : (
+                        <a href="mailto:feedback@thriill.com">feedback@thriill.com</a>
+                    )}
                 </div>
+                <div>
+                © 2024 Thrill. All rights reserved.
+            </div>
             </div>
         </div>
     );

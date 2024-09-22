@@ -10,7 +10,10 @@
     margin: 0 -80px;
     padding: 18 * $gridSize;
 
+
     &__left-end {
+    z-index: 2 !important;
+
         &__title {
             font-size: 5 * $gridSize;
             font-weight: 700;

@@ -23,7 +23,7 @@ const Main = () => {
         <div className="main-container">
         <div className='main'>
             <div className='main__left-end'>
-                <div className='main__left-end__title'>🎶 Welcome to ThriillApp! 🎶</div>
+                <h1 className='main__left-end__title'>🎶 Welcome to ThriillApp! 🎶</h1>
                 <div className='main__left-end__sub-title'>Unlock the world of music theory, from notations to intervals, in a fun and engaging way—right at your fingertips. Ready to level up your musical skills? Sign up and start the journey today!</div>
                 <div className='main__left-end__buttons'>
                 <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">

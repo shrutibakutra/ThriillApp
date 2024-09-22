@@ -13,7 +13,7 @@ import logo from "../../assets/logo1.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -23,20 +23,19 @@ const Header = () => {
     sections.forEach(id => {
       const element = document.getElementById(id);
       if (element) {
-        element.style.scrollMarginTop = '80px'; // Adjust scroll margin for sections
+        element.style.scrollMarginTop = '80px';
       }
     });
   };
 
-  // Detect scroll position
   useEffect(() => {
     adjustScroll();
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setIsScrolled(true);  // Add background color when scrolled down
+        setIsScrolled(true); 
       } else {
-        setIsScrolled(false); // Reset background color when at the top
+        setIsScrolled(false);
       }
     };
 

@@ -19,6 +19,9 @@
 
     &__right {
         text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         @media (max-width: $xsmallcreen) {
             text-align: center;

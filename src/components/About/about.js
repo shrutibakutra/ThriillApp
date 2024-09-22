@@ -10,6 +10,6 @@ const About = () => {
             <CardThrill src={faVideo} title={"Visual Learning"} cardText={"Enjoy easy-to-follow video lessons that break down complex topics. Rewatch anytime, at your own pace!"}/>
             <CardThrill src={faBook} title={"On-the-Go Reading"} cardText={"Prefer reading? All topics are available in text format, so you can dive in whenever it suits you"}/>
         </div>
-    )
+    );
 }
 export default About;

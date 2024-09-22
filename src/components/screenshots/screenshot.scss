@@ -12,15 +12,30 @@
   align-items: center;
 
   img {
-    border-radius: $gridSize;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &__side {
+    transition: all 5s ease;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: $gridSize * 3.5;
+  }
+
+  &__center {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 5s ease;
+    border-radius: $gridSize * 2;
+    height: 100%;
+    width: 100%;
   }
 }
 
 .carousel-control-prev,
 .carousel-control-next {
   opacity: 1 !important;
-
 }
 
 .carousel-control-next-icon {
@@ -41,30 +56,10 @@
   background-image: url("./../../assets/ArrowBack.png") !important;
   opacity: 1 !important;
   width: 33%;
-
-}
-
-.c-img {
-  margin-right: 16px;
-}
-
-.c-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #958b81;
-  pointer-events: none;
 }
 
 .carousel-indicators li {
   background-color: #958b81;
-}
-
-.carousel-indicators .active {
-  background-color: red;
 }
 
 /* Style for the mobile frame */
@@ -80,6 +75,21 @@
   border: 12px solid #333;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   margin-right: 16px;
+
+  &--small {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 250px;
+    background-color: #000;
+    border-radius: 40px;
+    border: 12px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 16px;
+    opacity: 0.8;
+  }
 
   &--mobile {
     position: relative;
@@ -112,4 +122,14 @@
   height: 100%;
   width: auto;
   object-fit: contain;
+}
+
+
+
+.carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease !important;  // Smooth slide animation for each item
+}
+
+.mobile-frame, .mobile-frame--mobile {
+  transition: transform 0.5s ease, opacity 0.5s ease;  // Smoother transition for mobile view
 }
