@@ -78,7 +78,7 @@ const ParticlesThrill = () => {
               enable: true,
               area: 500,
             },
-            value: 20,
+            value: 12,
           },
           opacity: {
             value: 0.6,
@@ -87,7 +87,6 @@ const ParticlesThrill = () => {
             type: "char", // changing shape to 'char' for custom characters
             character: {
               value: ['♩', "♫", "𝄞"],
-              font: "Verdana",
               style: "",
               weight: "700",
               fill: true,
