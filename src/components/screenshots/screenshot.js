@@ -21,22 +21,6 @@ const Screenshot = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const visibleImages = 4;
-    const totalImages = items.length;
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % (totalImages - visibleImages + 1));
-        }, 3000); // Slide every 3 seconds
-        return () => clearInterval(interval);
-      }, [totalImages]);
-
-    const slideStyle = {
-        transform: `translateX(-${currentIndex * 100 / visibleImages}%)`
-    };
-
     const next = () => {
         if (animating) return;
         const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;

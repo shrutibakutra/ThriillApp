@@ -14,6 +14,16 @@
   img {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
+  @keyframes slidein {
+    from {
+      transform: translateX(0%);
+
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+  }
 
   &__side {
     transition: all 5s ease;
@@ -21,6 +31,9 @@
     width: 100%;
     border-radius: 10px;
     border-radius: $gridSize * 3.5;
+    // transform: translateX(-100%);
+    // animation: slidein 5s;
+
   }
 
   &__center {
@@ -30,6 +43,8 @@
     border-radius: $gridSize * 2;
     height: 100%;
     width: 100%;
+    // transform: translateX(-100%);
+
   }
 }
 
@@ -137,12 +152,4 @@
   .active {
     opacity: 1;
   }
-}
-
-
-.carousel-item {
-  transition: none !important;
-}
-.mobile-frame, .mobile-frame--mobile {
-  transition: none;
 }

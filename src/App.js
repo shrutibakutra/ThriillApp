@@ -18,7 +18,6 @@ function App() {
         />
       </Helmet>
       <ParticlesThrill/>
-
       <Header />
       <Main />
       <About />
