@@ -33,9 +33,9 @@ const Availability = () => {
                         <a href="mailto:feedback@thriill.com">feedback@thriill.com</a>
                     )}
                 </div>
-                <div>
-                © 2024 Thrill. All rights reserved.
-            </div>
+                <div className="availability-container__right__copyright">
+                    © 2024 Thrill. All rights reserved.
+                </div>
             </div>
         </div>
     );
