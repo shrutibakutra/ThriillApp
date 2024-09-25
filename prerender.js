@@ -16,7 +16,9 @@ const routes = [
   const page = await browser.newPage();
 
   for (const route of routes) {
-    const url = `https://shrutibakutra.github.io/ThriillApp${route}`; // Replace with your local development server
+    const url = `https://shrutibakutra.github.io/ThriillApp${route}`;
+    // const url = `http://localhost:3000${route}`;
+
     await page.goto(url, { waitUntil: 'networkidle2' });
 
     // Create a file for each route's HTML content
