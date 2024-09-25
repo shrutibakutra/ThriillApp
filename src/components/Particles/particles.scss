@@ -2,11 +2,11 @@
 @import "../../styles/styles.scss";
 
 #tsparticles {
-    height: 720px;
-    margin: 0 -70px;
+    height: 90 * $gridSize;
+    margin: 0 -64px;
 
     @media (max-width: $smallScreen) {
         margin: 0;
-        height: 620px;
+        height: 600px;
     }
 }  

@@ -7,10 +7,10 @@
     height: 90 * $gridSize;
     align-items: center;
     background-color: #0075FF;
-    margin: 0 -70px;
-    padding: 18 * $gridSize;
+    margin: 0 -64px;
+    padding: 0 8 * $gridSize;
     color: #fff;
-    margin-top: -700px;
+    margin-top: -624px;
 
 
     &__left-end {
@@ -69,7 +69,10 @@
               }
         }
     }
-    @media (min-width: $smallScreen) and (max-width: 1024px) {        
+    @media (min-width: $smallScreen) and (max-width: 1024px) {      
+        justify-content: center;  
+        height: 75 * $gridSize;
+
         &__left-end {
             &__buttons {
                     a {

@@ -89,7 +89,7 @@
   border-radius: 40px;
   border: 12px solid #333;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin-right: 16px;
+  // margin-right: 16px;
 
   &::before {
     content: "";
@@ -113,7 +113,7 @@
     border-radius: 40px;
     border: 12px solid #333;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-right: 16px;
+    margin: 0 2 * $gridSize;
 
     &::before {
       content: "";
@@ -127,7 +127,6 @@
     }
 
     @media (max-width: $smallScreen) { 
-      
       display: none;
     }
   }
