@@ -27,6 +27,16 @@
         }
 
         @media (max-width: $xsmallcreen) {
+            text-align: left;
+            margin-top: 2 * $gridSize;
+            color: $color--black;
+
+            &__copyright {
+                margin-top: 2 * $gridSize;
+            }
+        }
+
+        @media (max-width: $xxsmallScreen) {
             text-align: center;
             margin-top: 2 * $gridSize;
 

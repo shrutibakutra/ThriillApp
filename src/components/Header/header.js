@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <Navbar className={`navbar-custom ${isScrolled ? 'scrolled' : ''}`} light expand="md">
       <NavbarBrand href="/">
-        <img src={logo} height={"50px"} alt="Logo" />
+        <img src={logo} height={"40px"} alt="Logo" />
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar className='navbar-header'>

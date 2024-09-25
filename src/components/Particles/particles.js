@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import "./particles.scss";
 
 const ParticlesThrill = () => {
   const particlesInit = useCallback(async engine => {
@@ -24,10 +25,11 @@ const ParticlesThrill = () => {
       options={{
         background: {
           color: {
-            value: "linear-gradient(to right, #FFC000 0%, #fff 100%)",
+            value: "#0075FF",
           },
         },
-        height: '720px',
+        fullScreen: false,
+        height: '720px !important',
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -80,7 +82,7 @@ const ParticlesThrill = () => {
             value: 12,
           },
           opacity: {
-            value: 0.6,
+            value: 0.4,
           },
           shape: {
             type: "char", // changing shape to 'char' for custom characters

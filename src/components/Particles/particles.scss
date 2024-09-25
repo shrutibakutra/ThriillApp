@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+@import "../../styles/styles.scss";
+
+#tsparticles {
+    height: 720px;
+    margin: 0 -70px;
+
+    @media (max-width: $smallScreen) {
+        margin: 0;
+        height: 620px;
+    }
+}  

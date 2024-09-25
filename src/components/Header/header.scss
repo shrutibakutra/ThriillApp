@@ -8,17 +8,17 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
-  // background-color: $color--white; 
-  background: linear-gradient(to right, #0075FF 0%, #fff 100%);
+  background-color: #0075FF; 
+  // background: linear-gradient(to right, #0075FF 0%, #fff 100%);
   padding: 2 * $gridSize 7 * $gridSize !important;
-
 
   .navbar-header {
     margin-left: $gridSize * 4;
     justify-content: end;
   
     .nav-link {
-      color: $color--gray800;
+      color: #fff;
+
       transition: color 0.3s ease-in-out;
       font-size: 18px;
     }

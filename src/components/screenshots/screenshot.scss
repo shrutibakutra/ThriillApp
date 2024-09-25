@@ -125,6 +125,11 @@
       border-radius: 2px;
       z-index: 1;
     }
+
+    @media (max-width: $smallScreen) { 
+      
+      display: none;
+    }
   }
 
   &--mobile {
