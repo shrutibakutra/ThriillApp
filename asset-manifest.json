@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ThriillApp/static/css/main.bedb8060.css",
+    "main.css": "/ThriillApp/static/css/main.b8768fe7.css",
     "main.js": "/ThriillApp/static/js/main.a66e136d.js",
     "static/js/453.f5e1f7d8.chunk.js": "/ThriillApp/static/js/453.f5e1f7d8.chunk.js",
     "static/media/mockup1.png": "/ThriillApp/static/media/mockup1.5f2753db98b07f621e32.png",
@@ -10,12 +10,12 @@
     "static/media/thriill2.png": "/ThriillApp/static/media/thriill2.94ec5f843b6f01b5f6b5.png",
     "static/media/thriill1.png": "/ThriillApp/static/media/thriill1.baa40164b99368ace2b0.png",
     "index.html": "/ThriillApp/index.html",
-    "main.bedb8060.css.map": "/ThriillApp/static/css/main.bedb8060.css.map",
+    "main.b8768fe7.css.map": "/ThriillApp/static/css/main.b8768fe7.css.map",
     "main.a66e136d.js.map": "/ThriillApp/static/js/main.a66e136d.js.map",
     "453.f5e1f7d8.chunk.js.map": "/ThriillApp/static/js/453.f5e1f7d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bedb8060.css",
+    "static/css/main.b8768fe7.css",
     "static/js/main.a66e136d.js"
   ]
 }
