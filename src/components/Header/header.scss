@@ -8,8 +8,7 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
-  background-color: #0075FF; 
-  // background: linear-gradient(to right, #0075FF 0%, #fff 100%);
+  background-color: $color--teal; 
   padding: 2 * $gridSize 7 * $gridSize !important;
 
   .navbar-header {

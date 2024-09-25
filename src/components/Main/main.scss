@@ -4,14 +4,12 @@
 .main {
     display: flex;
     justify-content: space-between;
-    height: 90 * $gridSize;
+    height: 80 * $gridSize;
     align-items: center;
-    background-color: #0075FF;
-    margin: 0 -64px;
+    background-color: $color--teal;
     padding: 0 8 * $gridSize;
     color: #fff;
-    margin-top: -624px;
-
+    margin: -568px -64px 0;
 
     &__left-end {
         z-index: 2 !important;
@@ -69,7 +67,14 @@
               }
         }
     }
-    @media (min-width: $smallScreen) and (max-width: 1024px) {      
+
+    @media (max-width: 1024px) {      
+        &__right-end {
+            display: none;
+        }
+    }
+
+    @media (max-width: $smallScreen) {      
         justify-content: center;  
         height: 75 * $gridSize;
 
