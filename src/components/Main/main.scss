@@ -41,7 +41,7 @@
             }
 
                 a {
-                    margin-right: 2 * $gridSize;
+                    margin: 0 3 * $gridSize;
                     img {
                        height: 7 * $gridSize;
                         width: 100%;
@@ -66,6 +66,10 @@
                 }
               }
         }
+    }
+
+    @media (min-width: $xxlargeScreen) {      
+       padding: 0 300px;
     }
 
     @media (max-width: 1024px) {      

@@ -8,7 +8,6 @@
     margin-left: -60px;
     margin-right: -60px;
     padding: 8 * $gridSize 20 * $gridSize;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -46,16 +45,6 @@
         }
     }
 
-    @media (max-width: $smallScreen) {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    @media (max-width: $xsmallcreen) {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 7 * $gridSize;
-    }
-    
     h1 {
         font-size: 4 * $gridSize;
         font-weight: bold;
@@ -76,6 +65,22 @@
             img {
                 width: 100%;
                 height: 56px;
+            }
+        }
+    }
+
+    @media (max-width: $smallScreen) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: $xsmallcreen) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 7 * $gridSize;
+
+        &__left { 
+            h1 {
+                font-size: 3 * $gridSize;
             }
         }
     }
