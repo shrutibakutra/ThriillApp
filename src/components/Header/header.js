@@ -9,7 +9,7 @@ import {
   Collapse,
 } from 'reactstrap';
 import "./header.scss";
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo2.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

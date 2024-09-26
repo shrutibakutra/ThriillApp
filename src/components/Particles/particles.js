@@ -25,7 +25,7 @@ const ParticlesThrill = () => {
       options={{
         background: {
           color: {
-            value: "#0075FF",
+            value: "#122E44",
           },
         },
         fullScreen: false,

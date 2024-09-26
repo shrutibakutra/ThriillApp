@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
-  background-color: $color--teal; 
+  background-color: $color--blue; 
   padding: 2 * $gridSize 7 * $gridSize !important;
 
   .navbar-header {
@@ -26,7 +26,10 @@
 
 .navbar-custom.scrolled {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-//   .nav-link {
-//     color: white;
-//   }
+}
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("../../assets/burger.svg") !important;
 }
