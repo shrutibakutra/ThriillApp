@@ -9,4 +9,7 @@
         margin: 0;
         height: 600px;
     }
+    @media (max-width: $xsmallcreen) {
+        margin: 0 -64px;
+    }
 }  
