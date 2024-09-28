@@ -5,8 +5,8 @@
     color: black;
     background-color: #f8f8f8;
     margin-top: 5 * $gridSize;
-    margin-left: -60px;
-    margin-right: -60px;
+    margin-left: -64px;
+    margin-right: -64px;
     padding: 8 * $gridSize 20 * $gridSize;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,10 +69,10 @@
         }
     }
 
-    @media (max-width: $smallScreen) {
-        margin-left: 0;
-        margin-right: 0;
-    }
+    // @media (max-width: $smallScreen) {
+    //     margin-left: 0;
+    //     margin-right: 0;
+    // }
 
     @media (max-width: $xsmallcreen) {
         grid-template-columns: repeat(1, 1fr);
