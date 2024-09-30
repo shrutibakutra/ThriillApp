@@ -1,6 +1,10 @@
 @import "../../styles/colors.scss";
 @import "../../styles/styles.scss";
-
+.screenshot {
+  h1 {
+    color: $color--white;
+  }
+}
 .screenshot__scroll {
   z-index: 1000;
   opacity: 1;

@@ -59,14 +59,14 @@ const Screenshot = () => {
                     </div>
                 ) : (
                     <div className='carousel-images'>
-                         <div className="mobile-frame--small">
+                        <div className="mobile-frame--small">
                             <img src={items[getPreviousIndex()].src} className='carousel-images__side' />
                         </div>
                         <div className="mobile-frame">
                             <img src={items[activeIndex].src} className='mobile-view carousel-images__center' />
                         </div>
                         <div className="mobile-frame--small">
-                        <img src={items[getNextIndex()].src} height={'400px'} className='carousel-images__side' />
+                            <img src={items[getNextIndex()].src} height={'400px'} className='carousel-images__side' />
                         </div>
                     </div>
                 )}

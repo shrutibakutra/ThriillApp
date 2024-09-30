@@ -3,7 +3,7 @@
 
 .availability-container {
     color: black;
-    background-color: #f8f8f8;
+    background-color: $color--blue;
     margin-top: 5 * $gridSize;
     margin-left: -64px;
     margin-right: -64px;
@@ -13,6 +13,10 @@
 
     &__left {
         text-align: left;
+
+        h1,p {
+            color: $color--white;
+        }
     }
 
     &__right {
@@ -21,14 +25,19 @@
         flex-direction: column;
         justify-content: space-between;
 
+        &__copyright {
+            color: $color--white;
+        }
+
         h3 {
             margin-bottom: 3 * $gridSize;
+            color: $color--white;
         }
 
         @media (max-width: $xsmallcreen) {
             text-align: left;
             margin-top: 2 * $gridSize;
-            color: $color--black;
+            // color: $color--black;
 
             &__copyright {
                 margin-top: 2 * $gridSize;
@@ -68,11 +77,6 @@
             }
         }
     }
-
-    // @media (max-width: $smallScreen) {
-    //     margin-left: 0;
-    //     margin-right: 0;
-    // }
 
     @media (max-width: $xsmallcreen) {
         grid-template-columns: repeat(1, 1fr);

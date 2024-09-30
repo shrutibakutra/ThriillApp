@@ -2,9 +2,10 @@
 @import "./../../styles/styles.scss";
 
 .card-thriill {
-    border: 1px solid #fff !important;
+    // border: 1px solid #fff !important;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 2 * $gridSize;
+    background-color: $color-charcole !important;
 
     &__title {
         font-weight: 700 !important;
@@ -15,8 +16,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-
-       
+        color: $color--white;
     }
 
     &--border {
@@ -24,7 +24,7 @@
     }
 
     &__icon {
-        color: $color--green;
+        color: $coloy-gray;
         font-size: 5 * $gridSize;
     }
 
