@@ -2,8 +2,7 @@
 @import "./../../styles/styles.scss";
 
 .card-thriill {
-    // border: 1px solid #fff !important;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: $color--blue 0px 8px 16px 0px;
     padding: 2 * $gridSize;
     background-color: $color-charcole !important;
 
@@ -24,7 +23,7 @@
     }
 
     &__icon {
-        color: $coloy-gray;
+        color: $color--gray;
         font-size: 5 * $gridSize;
     }
 
