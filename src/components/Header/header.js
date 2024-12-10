@@ -9,7 +9,7 @@ import {
   Collapse,
 } from 'reactstrap';
 import "./header.scss";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/logo2.svg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,8 +47,8 @@ const Header = () => {
 
   return (
     <Navbar className={`navbar-custom ${isScrolled ? 'scrolled' : ''}`} light expand="md">
-      <NavbarBrand href="/">
-        <img src={logo} height={"40px"} alt="Logo" />
+      <NavbarBrand href="/" >
+        <img src={logo} height={"60px"} alt="Logo" style={{backgroundColor:"#fff", borderRadius:"4px"}} />
       </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar className='navbar-header'>
