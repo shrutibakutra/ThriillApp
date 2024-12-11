@@ -40,6 +40,9 @@ const Availability = () => {
                     )}
                 </div>
                 <div>
+                    <div className="availability-container__right__follow">
+                        Follow us on
+                    </div>
                     <a href='https://www.instagram.com/thriillapp?igsh=dWlmbWR5NWhyYnhq'>
                         <FontAwesomeIcon icon={faInstagram} style={{color: "#fafafa"}}/>
                     </a>
