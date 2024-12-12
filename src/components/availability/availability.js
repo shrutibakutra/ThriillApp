@@ -43,18 +43,20 @@ const Availability = () => {
                     <div className="availability-container__right__follow">
                         Follow us on
                     </div>
-                    <a href='https://www.instagram.com/thriillapp?igsh=dWlmbWR5NWhyYnhq'>
-                        <FontAwesomeIcon icon={faInstagram} style={{color: "#fafafa"}}/>
-                    </a>
-                    <a href='https://www.facebook.com/profile.php?id=61558666558135'>
-                        <FontAwesomeIcon icon={faFacebookF} style={{color: "#fafafa"}}/>
-                    </a>
-                    <a href='https://youtube.com/@thriillapp?feature=shared'>
-                        <FontAwesomeIcon icon={faYoutube} style={{color: "#fafafa"}}/>
-                    </a>
-                    <a href='https://www.tiktok.com/@thriill.com?_t=8pkNUYkvnpg&_r=1'>
-                        <FontAwesomeIcon icon={faTiktok} style={{color: "#fafafa"}}/>
-                    </a>
+                    <div>
+                        <a href='https://www.instagram.com/thriillapp?igsh=dWlmbWR5NWhyYnhq'>
+                            <FontAwesomeIcon icon={faInstagram} style={{color: "#fafafa"}}/>
+                        </a>
+                        <a href='https://www.facebook.com/profile.php?id=61558666558135'>
+                            <FontAwesomeIcon icon={faFacebookF} style={{color: "#fafafa"}}/>
+                        </a>
+                        <a href='https://youtube.com/@thriillapp?feature=shared'>
+                            <FontAwesomeIcon icon={faYoutube} style={{color: "#fafafa"}}/>
+                        </a>
+                        <a href='https://www.tiktok.com/@thriill.com?_t=8pkNUYkvnpg&_r=1'>
+                            <FontAwesomeIcon icon={faTiktok} style={{color: "#fafafa"}}/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

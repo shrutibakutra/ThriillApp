@@ -59,12 +59,26 @@
             margin-top: 2 * $gridSize;
         }
 
+        @media (max-width: $smallScreen) {
+            margin-right: 3 * $gridSize;
+            margin-left: 2 * $gridSize;
+        }
+
         @media (max-width: $xsmallcreen) {
             text-align: left;
             margin-top: 2 * $gridSize;
-            // color: $color--black;
 
             &__copyright {
+                margin-top: 2 * $gridSize;
+            }
+
+           svg {
+                margin-right: 3 * $gridSize;
+                margin-left: 0px;
+                height: 4 * $gridSize;
+           }
+
+            &__follow {
                 margin-top: 2 * $gridSize;
             }
         }
@@ -102,6 +116,11 @@
             }
         }
     }
+
+    @media (max-width: $smallScreen) {
+        padding: 6 * $gridSize;
+    }
+
 
     @media (max-width: $xsmallcreen) {
         grid-template-columns: repeat(1, 1fr);
