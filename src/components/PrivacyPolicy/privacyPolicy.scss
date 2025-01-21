@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+@import "../../styles/styles.scss";
+
+.privacypolicy-container {
+    margin-top: 100px;
+    background-color: #fff;
+    text-align: left;
+    margin: 100px -64px;
+    padding: $gridSize * 2;
+}

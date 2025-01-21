@@ -7,6 +7,11 @@ import {
   NavLink,
   NavbarToggler,
   Collapse,
+
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import "./header.scss";
 import logo from "../../assets/logo2.svg";
@@ -14,8 +19,10 @@ import logo from "../../assets/logo2.svg";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   const adjustScroll = () => {
     const sections = ['features', 'screenshots', 'download', 'contact'];
@@ -66,8 +73,19 @@ const Header = () => {
             <NavLink href="#contact">Contact</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">About</NavLink>
+            <NavLink href="#contact">About</NavLink>
           </NavItem>
+          <Dropdown nav isOpen={dropdownOpen} toggle={toggleDropdown}>
+            <DropdownToggle nav caret>
+              Music Sheets & Links
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem target="_blank" href="https://drive.google.com/drive/folders/1-7a8hS9aQDmkL3MaSycI8Uf5Y623QDp8?usp=drive_link">Beginner Level</DropdownItem>
+              <DropdownItem target="_blank" href="https://drive.google.com/drive/folders/1yepGOgXlxygK70ys3YyuXkuv9nhWggWH">Intermediate Level</DropdownItem>
+              <DropdownItem target="_blank" href="https://drive.google.com/drive/folders/15XgBiY9uGLSBWq5jFS9W2Z38jpoX6Zhu">Upper Intermediate Level</DropdownItem>
+              <DropdownItem target="_blank" href="https://drive.google.com/drive/u/1/mobile/folders/1dgP04BMPuzPySixKevE54bPLy0_x8_k5?usp=share_link&pli=1&sort=13&direction=a">Duets</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
         </Nav>
       </Collapse>
     </Navbar>

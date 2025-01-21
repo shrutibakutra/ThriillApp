@@ -17,6 +17,12 @@
         h1,p {
             color: $color--white;
         }
+
+        &__policy {
+            color: rgb(91, 91, 243);
+            text-decoration: underline;
+            margin-left: 8px;
+        }
     }
 
     &__right {

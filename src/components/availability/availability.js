@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import './availability.scss';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Availability = () => {
     const [showEmail, setShowEmail] = useState(false);
@@ -13,8 +14,10 @@ const Availability = () => {
     return (
         <div className="availability-container" id='contact'>
             <div className="availability-container__left">
-                <h1>Available for free!</h1>
-                <p>Download free app from Google Play Store or App Store now and become a better musician!</p>
+                <p>Download app from Google Play Store or App Store now and become a better musician! 
+                <Link to="/privacy-policy" className="availability-container__left__policy">
+                        See Privacy Policy
+                </Link></p>
                 <div className="store-buttons">
                     <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
                         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
