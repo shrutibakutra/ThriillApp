@@ -9,8 +9,24 @@
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
   background-color: $color--blue; 
-  padding: 2 * $gridSize 7 * $gridSize !important;
+  padding: 2 * $gridSize 6 * $gridSize !important;
+  
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .navbar-custom__button {
+    background-color: #000000;
+    border: none;
+    box-shadow: 2px 8px 8px 8px rgba(255, 255, 255, 0.1); 
+    padding: 16px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+ 
   .navbar-header {
     margin-left: $gridSize * 4;
     justify-content: end;
