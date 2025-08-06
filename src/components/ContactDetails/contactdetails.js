@@ -10,21 +10,18 @@ const ContactDetails = () => {
     return (
         <div className="contact-details">
             <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Join Our Global Music Community</ModalHeader>
+                <ModalHeader toggle={toggle}> Welcome to the Thriill App!</ModalHeader>
                 <ModalBody>
                     <p>
-                        We are building a vibrant community of music students and teachers from all around the world. If you're a student looking to learn or a teacher eager to share your knowledge, we'd love to connect with you!
-                    </p>
-                    <p>
-                        Please take a moment to fill out our form and become a part of this exciting network.
+                        Looking for a fun way to study music theory? Try our app on <a href="https://play.google.com/store/apps/details?id=com.thriill.app">Android</a> today, or join the iOS waiting list and be the first to know when it drops!
                     </p>
                     <a
-                        href="https://docs.google.com/forms/d/1wKEh43BoaYEqasm2VJo4Cjb6jBrzEvqDKqJurs9bdSA/edit"
+                        href="https://docs.google.com/forms/d/1C4iWXxp46an5YpNxrlLVMiTYjlfpFtCqF2ZX-u1gwG8/edit"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-button"
                     >
-                        Join Us Now
+                        Join our waitlist
                     </a>
                 </ModalBody>
             </Modal>
