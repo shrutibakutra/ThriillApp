@@ -39,7 +39,7 @@ const Main = () => {
                 <img src={hero} height={"600px"} />
             </div>
         </div>
-            <ContactDetails/>
+            {/* <ContactDetails/> */}
         </div>
     );
 };

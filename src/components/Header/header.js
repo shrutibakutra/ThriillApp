@@ -16,6 +16,7 @@ import {
 } from 'reactstrap';
 import "./header.scss";
 import logo from "../../assets/logo2.svg";
+import ContactDetails from '../ContactDetails/contactdetails';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +64,7 @@ const Header = () => {
       <div>
         <Button className='navbar-custom__button'>
           <a
-            href="https://docs.google.com/forms/d/1wKEh43BoaYEqasm2VJo4Cjb6jBrzEvqDKqJurs9bdSA/edit"
+            href="https://docs.google.com/forms/d/1C4iWXxp46an5YpNxrlLVMiTYjlfpFtCqF2ZX-u1gwG8/edit"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -105,6 +106,7 @@ const Header = () => {
           </Nav>
         </Collapse>
       </div>
+        <ContactDetails/>
     </Navbar>
   );
 };
