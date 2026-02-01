@@ -27,7 +27,7 @@ const Main = () => {
                 <h1 className='main__left-end__title'> Welcome to ThriillApp!</h1>
                 <div className='main__left-end__sub-title'>Unlock the world of music theory, from notations to intervals, in a fun and engaging way—right at your fingertips. Ready to level up your musical skills? Sign up and start the journey today!</div>
                 <div className='main__left-end__buttons'>
-                <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+                <a href="https://apps.apple.com/in/app/thriill-train-your-ear/id6744299502" target="_blank" rel="noopener noreferrer">
                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.thriill.app" target="_blank" rel="noopener noreferrer">
