@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import "./main.scss";
 import hero from "../../assets/mockup1.png";
-import ContactDetails from '../ContactDetails/contactdetails';
 
 const Main = () => {
 
@@ -36,11 +35,10 @@ const Main = () => {
                 </div>
             </div>
             <div className='main__right-end' >
-                <img src={hero} height={"600px"} />
+                <img src={hero} height={"600px"} alt='HeroImage' />
             </div>
         </div>
-            {/* <ContactDetails/> */}
-        </div>
+    </div>
     );
 };
 

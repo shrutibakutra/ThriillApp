@@ -12,11 +12,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Button,
 } from 'reactstrap';
 import "./header.scss";
 import logo from "../../assets/logo2.svg";
-import ContactDetails from '../ContactDetails/contactdetails';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,17 +59,6 @@ const Header = () => {
           <img src={logo} height={"60px"} alt="Logo" style={{ backgroundColor: "#fff", borderRadius: "4px" }} />
         </NavbarBrand>
       </div>
-      <div>
-        <Button className='navbar-custom__button'>
-          <a
-            href="https://docs.google.com/forms/d/1C4iWXxp46an5YpNxrlLVMiTYjlfpFtCqF2ZX-u1gwG8/edit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Us Now
-          </a>
-        </Button>
-      </div>
       <NavbarToggler onClick={toggle} />
       <div>
         <Collapse isOpen={isOpen} navbar className='navbar-header'>
@@ -106,7 +93,6 @@ const Header = () => {
           </Nav>
         </Collapse>
       </div>
-        <ContactDetails/>
     </Navbar>
   );
 };
