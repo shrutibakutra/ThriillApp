@@ -1,8 +1,12 @@
 @import "../../styles/colors.scss";
 @import "../../styles/styles.scss";
 .screenshot {
+  touch-action: pan-y;
+  padding-bottom: 12 * $gridSize;
+
   h1 {
     color: $color--white;
+    margin-bottom: 4 * $gridSize;
   }
 }
 .screenshot__scroll {
@@ -103,10 +107,6 @@
   background-image: url("./../../assets/ArrowBack.png") !important;
   opacity: 1 !important;
   width: 33%;
-}
-
-.carousel-indicators li {
-  background-color: #958b81;
 }
 
 /* Style for the mobile frame */

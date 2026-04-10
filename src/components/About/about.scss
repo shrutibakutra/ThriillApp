@@ -3,17 +3,38 @@
 
 .about {
     display: grid;
-    gap: 20px;
+    gap: 24px;
     grid-template-columns: repeat(4, 1fr);
-    margin: 10 * $gridSize 0;
+    margin: 10 * $gridSize 0 8 * $gridSize;
 
     @media (max-width: $smallScreen) {
         grid-template-columns: repeat(2, 1fr);
-        // margin: 3 * $gridSize;
     }
 
     @media (max-width: $xsmallcreen) {
         grid-template-columns: repeat(1, 1fr);
-        // margin: $gridSize 0 0 0;
+    }
+}
+
+// Wrapper for each card — handles the scroll-in animation
+.about__card {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+        opacity 0.55s ease var(--anim-delay, 0ms),
+        transform 0.55s ease var(--anim-delay, 0ms);
+
+    &--visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // Ensure card fills the full grid cell height
+    .card-thriill {
+        height: 100%;
+    }
+
+    @media (max-width: $xsmallcreen) {
+        margin-bottom: 0;
     }
 }

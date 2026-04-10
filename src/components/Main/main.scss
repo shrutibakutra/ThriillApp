@@ -16,9 +16,37 @@
         max-width: 100 * $gridSize ;
 
         &__title {
-            font-size: 5 * $gridSize;
-            font-weight: 700;
             margin-top: 2 * $gridSize;
+
+            &__welcome {
+                display: block;
+                font-size: 3.5 * $gridSize;
+                font-weight: 400;
+                opacity: 0.8;
+                margin-bottom: $gridSize;
+                letter-spacing: 0.01em;
+            }
+
+            &__hero {
+                display: block;
+                font-size: 6 * $gridSize;
+                font-weight: 700;
+                line-height: 1.1;
+            }
+
+            &__accent {
+                color: $color--teal;
+            }
+
+            @media (max-width: $smallScreen) {
+                &__welcome { font-size: 3 * $gridSize; }
+                &__hero { font-size: 5 * $gridSize; }
+            }
+
+            @media (max-width: $xsmallcreen) {
+                &__welcome { font-size: 2.5 * $gridSize; }
+                &__hero { font-size: 4 * $gridSize; }
+            }
         }
 
         &__sub-title {

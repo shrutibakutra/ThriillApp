@@ -36,6 +36,31 @@ $gridSize: 8px;
         }
 }
 
+.cta-button--outline {
+    background-color: transparent;
+    border: 1.5px solid $color--teal;
+    border-radius: 4px !important;
+    height: $gridSize * 7;
+    width: $gridSize * 22;
+    color: $color--teal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $color--teal;
+        color: $color--white;
+    }
+
+    @media (max-width: $smallScreen) {
+        width: $gridSize * 21;
+        font-size: 2 * $gridSize;
+    }
+
+    @media (max-width: $xxsmallScreen) {
+        width: $gridSize * 21;
+        font-size: 16px;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }

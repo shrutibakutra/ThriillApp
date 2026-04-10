@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import "./main.scss";
 import hero from "../../assets/mockup1.png";
 
@@ -21,24 +21,31 @@ const Main = () => {
 
     return (
         <div className="main-container">
-        <div className='main'>
-            <div className='main__left-end'>
-                <h1 className='main__left-end__title'> Welcome to Thriill! Train Your Ear!</h1>
-                <div className='main__left-end__sub-title'>Unlock the world of music theory, from notations to intervals, in a fun and engaging way—right at your fingertips. Ready to level up your musical skills? Sign up and start the journey today!</div>
-                <div className='main__left-end__buttons'>
-                <a href="https://apps.apple.com/in/app/thriill-train-your-ear/id6744299502" target="_blank" rel="noopener noreferrer">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.thriill.app" target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
-                </a>
+            <div className='main'>
+                <div className='main__left-end'>
+                    <h1 className='main__left-end__title'>
+                        <span className='main__left-end__title__welcome'>Welcome to Thriill!</span>
+                        <span className='main__left-end__title__hero'>
+                            Train Your Ear!<span className='main__left-end__title__accent'></span>
+                        </span>
+                    </h1>
+                    <div className='main__left-end__sub-title'>
+                        Unlock the world of music theory, from notations to intervals, in a fun and engaging way—right at your fingertips. Ready to level up your musical skills? Sign up and start the journey today!
+                    </div>
+                    <div className='main__left-end__buttons'>
+                        <a href="https://apps.apple.com/in/app/thriill-train-your-ear/id6744299502" target="_blank" rel="noopener noreferrer">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.thriill.app" target="_blank" rel="noopener noreferrer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+                        </a>
+                    </div>
+                </div>
+                <div className='main__right-end'>
+                    <img src={hero} height={"600px"} alt='HeroImage' />
                 </div>
             </div>
-            <div className='main__right-end' >
-                <img src={hero} height={"600px"} alt='HeroImage' />
-            </div>
         </div>
-    </div>
     );
 };
 

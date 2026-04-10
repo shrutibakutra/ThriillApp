@@ -21,7 +21,9 @@ function App() {
               <>
                 <ParticlesThrill />
                 <Main />
+                <div className="section-divider" />
                 <About />
+                <div className="section-divider" />
                 <Screenshots />
                 <Availability />
               </>

@@ -22,6 +22,16 @@
   color: #61dafb;
 }
 
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 117, 255, 0.35), transparent);
+  margin: 4 * $gridSize 0;
+
+  @media (max-width: $xsmallcreen) {
+    margin: 2 * $gridSize 0;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

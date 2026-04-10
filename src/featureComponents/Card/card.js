@@ -2,7 +2,7 @@ import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import "./card.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const CardThrill = ({ title, cardText, classname, border, src }) => {
+const CardThrill = ({ title, cardText, classname, border, src, iconColor }) => {
     return (
         <Card className={[
             "card-thriill",
@@ -10,7 +10,11 @@ const CardThrill = ({ title, cardText, classname, border, src }) => {
             border && "card-thriill--border"
         ]}
         >
-            <FontAwesomeIcon icon={src} className="card-thriill__icon"/>
+            <FontAwesomeIcon
+                icon={src}
+                className="card-thriill__icon"
+                style={iconColor ? { color: iconColor } : {}}
+            />
             <CardBody>
                 <CardTitle tag="h5" className="card-thriill__title">
                     {title}
